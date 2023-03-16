@@ -1,0 +1,54 @@
+DEBUG:atlassian.rest_client:curl --silent -X GET -H 'Content-Type: application/json' -H 'Accept: application/json'  'https://divyanshsaxena.atlassian.net/wiki/rest/api/user?username=name'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): divyanshsaxena.atlassian.net:443
+DEBUG:urllib3.connectionpool:https://divyanshsaxena.atlassian.net:443 "GET /wiki/rest/api/user?username=name HTTP/1.1" 401 None
+DEBUG:atlassian.rest_client:HTTP: GET rest/api/user -> 401 Unauthorized
+DEBUG:atlassian.rest_client:HTTP: Response text -> Basic authentication with passwords is deprecated.  For more information, see: https://developer.atlassian.com/cloud/confluence/deprecation-notice-basic-auth/
+
+ERROR:atlassian.confluence:Expecting value: line 1 column 1 (char 0)
+ERROR:root:401 Client Error: Unauthorized for url: https://divyanshsaxena.atlassian.net/wiki/rest/api/user?username=name
+DEBUG:atlassian.rest_client:curl --silent -X GET -H 'Content-Type: application/json' -H 'Accept: application/json'  'https://divyanshsaxena.atlassian.net/wiki/rest/api/user?username=divyanshsaxenaofficial%40gmail.com'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): divyanshsaxena.atlassian.net:443
+DEBUG:urllib3.connectionpool:https://divyanshsaxena.atlassian.net:443 "GET /wiki/rest/api/user?username=divyanshsaxenaofficial%40gmail.com HTTP/1.1" 403 None
+DEBUG:atlassian.rest_client:HTTP: GET rest/api/user -> 403 Forbidden
+DEBUG:atlassian.rest_client:HTTP: Response text -> {"message":"Current user not permitted to use Confluence","statusCode":403}
+ERROR:root:The calling user does not have permission to view users
+DEBUG:atlassian.rest_client:curl --silent -X GET -H 'Content-Type: application/json' -H 'Accept: application/json'  'https://divyanshsaxena.atlassian.net/wiki/rest/api/user?username=divyanshsaxenaofficial%40gmail.com'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): divyanshsaxena.atlassian.net:443
+DEBUG:urllib3.connectionpool:https://divyanshsaxena.atlassian.net:443 "GET /wiki/rest/api/user?username=divyanshsaxenaofficial%40gmail.com HTTP/1.1" 403 None
+DEBUG:atlassian.rest_client:HTTP: GET rest/api/user -> 403 Forbidden
+DEBUG:atlassian.rest_client:HTTP: Response text -> {"message":"Current user not permitted to use Confluence","statusCode":403}
+ERROR:root:The calling user does not have permission to view users
+DEBUG:atlassian.rest_client:curl --silent -X GET -H 'Content-Type: application/json' -H 'Accept: application/json'  'https://divyanshsaxena.atlassian.net/wiki/rest/api/user?username=divyanshsaxenaofficial%40gmail.com'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): divyanshsaxena.atlassian.net:443
+DEBUG:urllib3.connectionpool:https://divyanshsaxena.atlassian.net:443 "GET /wiki/rest/api/user?username=divyanshsaxenaofficial%40gmail.com HTTP/1.1" 403 None
+DEBUG:atlassian.rest_client:HTTP: GET rest/api/user -> 403 Forbidden
+DEBUG:atlassian.rest_client:HTTP: Response text -> {"message":"Current user not permitted to use Confluence","statusCode":403}
+ERROR:root:The calling user does not have permission to view users
+DEBUG:atlassian.rest_client:curl --silent -X GET -H 'Content-Type: application/json' -H 'Accept: application/json'  'https://divyanshsaxena.atlassian.net/wiki/rest/api/content/425986'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): divyanshsaxena.atlassian.net:443
+DEBUG:urllib3.connectionpool:https://divyanshsaxena.atlassian.net:443 "GET /wiki/rest/api/content/425986 HTTP/1.1" 401 None
+DEBUG:atlassian.rest_client:HTTP: GET rest/api/content/425986 -> 401 Unauthorized
+DEBUG:atlassian.rest_client:HTTP: Response text -> Basic authentication with passwords is deprecated.  For more information, see: https://developer.atlassian.com/cloud/confluence/deprecation-notice-basic-auth/
+
+ERROR:atlassian.confluence:Expecting value: line 1 column 1 (char 0)
+DEBUG:atlassian.rest_client:curl --silent -X GET -H 'Content-Type: application/json' -H 'Accept: application/json'  'https://divyanshsaxena.atlassian.net/wiki/rest/api/user?username=divyanshsaxenaofficial%40gmail.com'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): divyanshsaxena.atlassian.net:443
+DEBUG:urllib3.connectionpool:https://divyanshsaxena.atlassian.net:443 "GET /wiki/rest/api/user?username=divyanshsaxenaofficial%40gmail.com HTTP/1.1" 403 None
+DEBUG:atlassian.rest_client:HTTP: GET rest/api/user -> 403 Forbidden
+DEBUG:atlassian.rest_client:HTTP: Response text -> {"message":"Current user not permitted to use Confluence","statusCode":403}
+ERROR:root:The calling user does not have permission to view users
+INFO:atlassian.confluence:Creating page "DEMO" -> "This is the title"
+DEBUG:atlassian.rest_client:curl --silent -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' --data '"{\"type\": \"page\", \"title\": \"This is the title\", \"space\": {\"key\": \"DEMO\"}, \"body\": {\"storage\": {\"value\": \"This is the body. You can use <strong>HTML tags</strong>!\", \"representation\": \"storage\"}}, \"metadata\": {\"properties\": {}}}"' 'https://divyanshsaxena.atlassian.net/wiki/rest/api/content'
+DEBUG:urllib3.connectionpool:https://divyanshsaxena.atlassian.net:443 "POST /wiki/rest/api/content HTTP/1.1" 401 None
+DEBUG:atlassian.rest_client:HTTP: POST rest/api/content/ -> 401 Unauthorized
+DEBUG:atlassian.rest_client:HTTP: Response text -> Basic authentication with passwords is deprecated.  For more information, see: https://developer.atlassian.com/cloud/confluence/deprecation-notice-basic-auth/
+
+ERROR:atlassian.confluence:Expecting value: line 1 column 1 (char 0)
+ERROR:root:401 Client Error: Unauthorized for url: https://divyanshsaxena.atlassian.net/wiki/rest/api/content
+INFO:atlassian.confluence:Creating page "DEMO" -> "This is the title"
+DEBUG:atlassian.rest_client:curl --silent -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' --data '"{\"type\": \"page\", \"title\": \"This is the title\", \"space\": {\"key\": \"DEMO\"}, \"body\": {\"storage\": {\"value\": \"This is the body. You can use <strong>HTML tags</strong>!\", \"representation\": \"storage\"}}, \"metadata\": {\"properties\": {}}}"' 'https://divyanshsaxena.atlassian.net/wiki/rest/api/content'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): divyanshsaxena.atlassian.net:443
+DEBUG:urllib3.connectionpool:https://divyanshsaxena.atlassian.net:443 "POST /wiki/rest/api/content HTTP/1.1" 403 None
+DEBUG:atlassian.rest_client:HTTP: POST rest/api/content/ -> 403 Forbidden
+DEBUG:atlassian.rest_client:HTTP: Response text -> {"message":"Current user not permitted to use Confluence","statusCode":403}
+ERROR:root:Current user not permitted to use Confluence
